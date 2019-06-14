@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../product';
 
 @Component({
   selector: 'app-product-list',
@@ -32,11 +33,4 @@ export class ProductListComponent implements OnInit {
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
-}
-
-interface Product {
-  Product: string,
-  ProductName: string,
-  ProductDescription?: string,
-  Price: number
 }
